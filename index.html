@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pars Coder || Portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- boxicon css link -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Link Swiper's CSS -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/dist/boxicons.js"
+        integrity="sha512-Dm5UxqUSgNd93XG7eseoOrScyM1BVs65GrwmavP0D0DujOA8mjiBfyj71wmI2VQZKnnZQsSWWsxDKNiQIqk8sQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- EmailJS CDN -->
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <!-- Toastify CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <header>
+        <a href="#" class="logo"><span>I</span>shvar</a>
+        <ul class="navlist">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="right-header">
+            <div class="menu-icon">
+                <div class="bar"></div>
+            </div>
+        </div>
+    </header>
+
+    <section class="home" id="home">
+        <div class="hero-info">
+            <h3>Welcome To my Portfolio</h3>
+            <h1>Hi I'm Ishvar</h1>
+
+            <div class="text-animate">
+                <h2>Full Stack Web Developer</h2>
+            </div>
+
+            <p>
+                I am Ishvar Kanzariya, a passionate MERN Stack Web Developer with a B.Com degree. Skilled in building
+                dynamic web applications, I thrive on creating impactful digital solutions.</p>
+
+            <div class="btn-box">
+
+                <button onclick="downloadResume()" class="btn">Download Resume <i class='bx bx-download'
+                        target="_blank"></i></button>
+
+            </div>
+
+            <div class="social-media">
+
+
+                <div class="bg-icon">
+                    <a href="https://github.com/kanzariyaishvar"><i class='bx bxl-github'></i></a>
+                    <span></span>
+                </div>
+
+                <div class="bg-icon">
+                    <a href="https://www.linkedin.com/in/ishvar-kanzariya-596843291/"><i
+                            class='bx bxl-linkedin'></i></a>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div class="img-hero">
+            <!-- <img src="img/hero.png" alt=""> -->
+            <img src="me.png" alt="">
+            <div class="rotate-text">
+                <div class="text">
+                    <p>I'm Ishvar Kanzariya MERN Stack Developer</p>
+                </div>
+                <span><i></i></span>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="img/aboutMe.png" alt="" class="aboutHero">
+            <div class="showcase-ring">
+                <img src="shapes/ring.png" class="ring">
+                <img src="shapes/circle.png" class="circle">
+            </div>
+        </div>
+
+
+        <div class="about-content d-flex">
+            <!-- <h1>About Me</h1> -->
+            <img src="img/vec.jpg" alt="">
+        </div>
+
+
+        <div class="about-content">
+            <h2 class="heading">About Me</h2>
+            <p>I am Ishvar Kanzariya, a passionate MERN Stack Developer and B.Com graduate. Skilled in responsive web
+                design, frontend, and backend development, I specialize in building user-friendly, full-stack web
+                applications that combine creativity and functionality.</p>
+            <div class="about-btn">
+                <button class="active">Main Skills</button>
+                <button>Education</button>
+            </div>
+            <div class="content-btn">
+                <div class="content">
+                    <div class="text-box">
+                        <p>Responsive web-Design</p>
+                        <span>Crafting mobile-friendly, adaptive designs..</span>
+                    </div>
+                    <div class="text-box">
+                        <p>Frontend - Development</p>
+                        <span>Creating interactive and responsive interfaces, ...</span>
+                    </div>
+                    <div class="text-box">
+                        <p>Backend - Development</p>
+                        <span>Building efficient server-side solutions.</span>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <div class="text-box">
+                        <p>Full stack Web-devlopment</p>
+                        <span>Red And White Multimedia .edu.</span>
+                    </div>
+                    <div class="text-box">
+                        <p>12th Grade</p>
+                        <span>Shree Samjuba School Morbi</span>
+                    </div>
+                    <div class="text-box">
+                        <p>10th Grade</p>
+                        <span>Nani Vavdi Madhyamik School Morbi.</span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="cvContent">
+                <a href="img/resume.pdf" target="_blank" class="btn d-CV">Download CV <i class='bx bx-download'></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="main-text">
+            <h2 class="heading">My Services</h2>
+            <span>what i will do for you</span>
+        </div>
+
+        <div class="allServices">
+            <div class="servicesItem">
+                <div class="icon-services">
+                    <i class='bx bx-layer'></i>
+                    <span></span>
+                </div>
+                <h3>Web Development</h3>
+                <p>I create responsive web designs that adapt seamlessly across devices, ensuring a smooth user
+                    experience on desktops, tablets, and mobile phones through flexible layouts and media queries.</p>
+                <a href="#" class="readMore">Read More</a>
+            </div>
+
+            <div class="servicesItem">
+                <div class="icon-services">
+                    <i class='bx bx-code-alt'></i>
+                    <span></span>
+                </div>
+                <h3>Frontend Development</h3>
+                <p>I specialize in responsive frontend web development using React.js and Firebase, creating dynamic,
+                    user-friendly interfaces that adapt seamlessly across devices and platforms.</p>
+                <a href="#" class="readMore">Read More</a>
+            </div>
+
+            <div class="servicesItem">
+                <div class="icon-services">
+                    <i class='bx bx-code-alt'></i>
+                    <span></span>
+                </div>
+                <h3>Backend Development</h3>
+                <p>I specialize in responsive backend web development using MongoDB, Node.js, and Express, creating
+                    scalable, efficient APIs that ensure seamless functionality across various devices and platforms.
+                </p>
+                <a href="#" class="readMore">Read More</a>
+            </div>
+
+            <div class="servicesItem">
+                <div class="icon-services">
+                    <i class='bx bx-desktop'></i>
+
+                    <span></span>
+                </div>
+                <h3>Responsive Design</h3>
+                <p>I create visually appealing, user-friendly websites that adapt seamlessly across devices and screen
+                    sizes, ensuring a smooth and consistent experience for all users.</p>
+                <a href="#" class="readMore">Read More</a>
+            </div>
+        </div>
+
+        <div class="showcase">
+            <img src="shapes/ring.png" class="ring">
+            <img src="shapes/circle.png" class="circle">
+            <img src="shapes/circle.png" class="circle2">
+            <img src="shapes/circle.png" class="circle3">
+            <img src="shapes/half-ring.png" class="half-ring">
+        </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <div class="main-text">
+            <h2 class="heading">My Projects</h2>
+            <span>what i will do for you</span>
+        </div>
+        <div class="fillter-buttons">
+            <button class="button mixitup-control-active" data-filter="all">All Work</button>
+            <button class="button" data-filter=".web">Backend Devlopment</button>
+            <button class="button" data-filter=".uiux">Frontend Devlopment</button>
+            <button class="button" data-filter=".branding">Web Design</button>
+        </div>
+
+        <div class="portfolio-gallery">
+
+            <div class="portfolio-box mix web">
+                <div class="portfolio-content">
+                    <h3>Backend Development</h3>
+                    <p>Responsive Web Design Using HTML , CSS Media-query,Bootstrap.Node Js</p>
+                    <a href="https://github.com/kanzariyaishvar/REACTJS/tree/main/NODE_finle" class="readMore"><box-icon name='link-alt'></box-icon></a>
+                </div>
+                <div class="portfolio-img">
+                    <img src="img/project1.png" alt="">
+                </div>
+            </div>
+
+            <div class="portfolio-box mix branding">
+                <div class="portfolio-content">
+                    <h3>Web Design</h3>
+                    <p>Responsive Web Design Using HTML , CSS Media-query,Bootstrap</p>
+                    <a href="https://github.com/kanzariyaishvar/REACTJS/tree/main/project_1" class="readMore"><box-icon name='link-alt'></box-icon></a>
+                </div>
+                <div class="portfolio-img">
+                    <img src="img/project3.png" alt="">
+                </div>
+            </div>
+
+
+            <div class="portfolio-box mix branding">
+                <div class="portfolio-content">
+                    <h3>Web Design</h3>
+                    <p>Responsive Web Design Using HTML , CSS Media-query,Bootstrap</p>
+                    <a href="https://github.com/kanzariyaishvar/webpages/tree/main/web%20(21)" class="readMore"><box-icon name='link-alt'></box-icon></a>
+                </div>
+                <div class="portfolio-img">
+                    <img src="img/project5.png" alt="">
+                </div>
+            </div>
+
+            <div class="portfolio-box mix uiux">
+                <div class="portfolio-content">
+                    <h3>Frontend Development</h3>
+                    <p>Responsive Web Design Using HTML , CSS Media-query,Bootstrap , React , Redux.</p>
+                    <a href="https://github.com/kanzariyaishvar/REACTJS/tree/main/myproject" class="readMore"><box-icon name='link-alt'></box-icon></a>
+                </div>
+                <div class="portfolio-img">
+                    <img src="img/project2.png" alt="">
+                </div>
+            </div>
+
+            <div class="portfolio-box mix branding">
+                <div class="portfolio-content">
+                    <h3>Web Design</h3>
+                    <p>web-Design <br> Templete </p>
+                    <a href="https://github.com/kanzariyaishvar/webpages/tree/main/web%20(23)" class="readMore"><box-icon name='link-alt'></box-icon></a>
+                </div>
+                <div class="portfolio-img">
+                    <img src="img/project6.png" alt="">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="down-box" id="contact">
+        <div class="contactSkills">
+            <div class="contact-info">
+                <div class="main-text">
+                    <h2 class="heading">Contact Me</h2>
+                    <span>get in touch with me</span>
+                </div>
+                <form id="myForm">
+                    <div class="input-box">
+                        <input type="text" id="first-name" name="first-name" placeholder="First Name" required>
+                        <input type="text" id="full-name" name="full-name" placeholder="Last Name" required>
+                    </div>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message here..."
+                        required></textarea>
+                    <div class="formBtn">
+                        <button type="submit" class="btn">Send Message</button>
+                    </div>
+                </form>
+            </div>
+            <div class="skills">
+                <div class="container">
+                    <div class="skillBox">
+                        <div class="main-text">
+                            <h2 class="heading">My Skills</h2>
+                            <span>Let Me Help you</span>
+                        </div>
+                        <div class="skill-wrap">
+
+                            <div class="skill">
+
+                                <div class="icon-border"><box-icon type='logo' name='redux'></box-icon><p>Redux</p></div>
+
+                                <div class="icon-border"> <i class='bx bxl-mongodb'></i> <p>MongoDB</p> </div>
+                                <div class="icon-border"> <i class='bx bxl-jquery'></i><p>Jquery</p></div>
+                                <div class="icon-border"><box-icon name='firebase' type='logo'></box-icon><p>Firebase</p></div>
+                                <div class="icon-border"><svg role="img" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <title>npm</title>
+                                        
+                                        <path
+                                            d="M1.763 0C.786 0 0 .786 0 1.763v20.474C0 23.214.786 24 1.763 24h20.474c.977 0 1.763-.786 1.763-1.763V1.763C24 .786 23.214 0 22.237 0zM5.13 5.323l13.837.019-.009 13.836h-3.464l.01-10.382h-3.456L12.04 19.17H5.113z" />
+                                    </svg><p>NPM</p></div>
+                                <div class="icon-border"><svg role="img" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <title>Sublime Text</title>
+                                        <path
+                                            d="M20.953.004a.397.397 0 0 0-.18.017L3.225 5.585c-.175.055-.323.214-.402.398a.42.42 0 0 0-.06.22v5.726a.42.42 0 0 0 .06.22c.079.183.227.341.402.397l7.454 2.364-7.454 2.363c-.255.08-.463.374-.463.655v5.688c0 .282.208.444.463.363l17.55-5.565c.237-.075.426-.336.452-.6.003-.022.013-.04.013-.065V12.06c0-.281-.208-.575-.463-.656L13.4 9.065l7.375-2.339c.255-.08.462-.375.462-.656V.384c0-.211-.117-.355-.283-.38z" />
+                                    </svg><p>Sublime</p></div>
+                                <div class="icon-border"><svg role="img" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <title>Render</title>
+                                        <path
+                                            d="M18.263.007c-3.121-.147-5.744 2.109-6.192 5.082-.018.138-.045.272-.067.405-.696 3.703-3.936 6.507-7.827 6.507-1.388 0-2.691-.356-3.825-.979a.2024.2024 0 0 0-.302.178V24H12v-8.999c0-1.656 1.338-3 2.987-3h2.988c3.382 0 6.103-2.817 5.97-6.244-.12-3.084-2.61-5.603-5.682-5.75" />
+                                    </svg><p>Render</p></div>
+                                <div class="icon-border"><svg role="img" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <title>Vercel</title>
+                                        <path d="M24 22.525H0l12-21.05 12 21.05z" />
+                                    </svg><p>Vercel</p></div>
+                                <div class="icon-border"> <p>Express</p> <box-icon name='internet-explorer' type='logo'> </box-icon>
+                                </div>
+                                <div class="icon-border"><box-icon name='bootstrap' type='logo'></box-icon><p>Bootstrap</p></div>
+                                <div class="icon-border"><box-icon name='css3' type='logo'></box-icon><p>Css</p></div>
+                                <div class="icon-border"><box-icon name='html5' type='logo'></box-icon><p>Html</p></div>
+                                <div class="icon-border"><box-icon name='file-json' type='solid'></box-icon><p>Json</p></div>
+                                <div class="icon-border"><box-icon name='visual-studio' type='logo'></box-icon><p>Vs Code</p></div>
+                                <div class="icon-border"><box-icon name='github' type='logo' ></box-icon><p>Github</p></div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Copyright © 2024 by <i style="color: darkorchid;">Ishvar Kanzariya</i> || All Right Reservd.</p>
+    </footer>
+
+    <div id="progress">
+        <span id="progress-value">
+            <i class='bx bxs-chevrons-up'></i>
+        </span>
+    </div>
+
+    <!-- scroll reveal  -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- mixitup cdn js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+    <script src="script.js"></script>
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script> -->
+
+</body>
+
+</html>

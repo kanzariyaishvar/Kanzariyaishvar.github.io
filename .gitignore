@@ -1,0 +1,29 @@
+# Node.js dependencies
+node_modules/
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build and deployment directories
+dist/
+build/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Editor-specific files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Temporary files
+*.log
+*.tmp
+*.bak
+
+# gh-pages branch cache
+.gh-pages-cache/
